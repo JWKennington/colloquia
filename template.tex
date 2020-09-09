@@ -14,28 +14,25 @@
 \documentclass{psuposter}
 
 
+\usepackage{natbib}
 \usepackage{lipsum}                                % Dummy text
 \usepackage[figwidth = 0.98\linewidth]{todonotes}  % Dummy image (and more!)
 \usepackage[absolute, overlay]{textpos}            % Figure placement
 \setlength{\TPHorizModule}{\paperwidth}
 \setlength{\TPVertModule}{\paperheight}
 
+\setcitestyle{numbers,square}
+
 
 \title{Some Lengthy and Technical Title}
 \author
 {%
-    First Author\inst{1}
-    \and
-    Second Author\inst{2}
-    \and
-    Third Author\inst{1}
+    Speaker Name\inst{1}
 }
 %% Optional:
 \institute
 {
-    \inst{1} Department of Mathematics
-    \and
-    \inst{2} Department of Informatics
+    \inst{1} University of Speaker, Department of Speaker
 }
 % Or:
 %\institute{Contact information}
@@ -51,46 +48,57 @@
 
 
 \begin{column}{0.5\textwidth - 1.5cm}
-    \begin{block}{Introduction}
-        The basic \structure{block} looks like this.
+    \begin{block}{Speaker Biographic Summary}
+    	\begin{center}
+	    	\includegraphics[width=0.6\textwidth]{psuposter-images/lion}    		
+    	\end{center}
+        This paragraph represents the speaker bio. Include their name, affiliation (yes it is included above too..). Also describe their educational background briefly, as well as research interests. If they have won any notable awards / etc, try to mention that as well.
     \end{block}
+%
+%    \begin{exampleblock}{Does it come in black?}
+%        Sure, use an \textbf{exampleblock}!
+%    \end{exampleblock}
+%
+%    \begin{alertblock}{How do you make it pop?}
+%        Use an \alert{alertblock}!
+%    \end{alertblock}
+%
+%    \begin{block}{Method}
+%        \lipsum[1]
+%    \end{block}
 
-    \begin{exampleblock}{Does it come in black?}
-        Sure, use an \textbf{exampleblock}!
-    \end{exampleblock}
-
-    \begin{alertblock}{How do you make it pop?}
-        Use an \alert{alertblock}!
-    \end{alertblock}
-
-    \begin{block}{Method}
-        \lipsum[1]
-    \end{block}
-
-    \begin{block}{Results}
+    \begin{block}{Research Interests}
         \lipsum[2]
-        \missingfigure{Striking imagery relevant to the research}
-        \unskip
+        \begin{center}
+	    	\includegraphics[width=0.6\textwidth]{psuposter-images/sample-research}    		
+    	\end{center}
     \end{block}
 \end{column}
 
 
 \begin{column}{0.5\textwidth - 1.5cm}
-    \begin{block}{Conclusions}
+    \begin{block}{Talk Abstract}
         \lipsum[4]
     \end{block}
 
-    \begin{block}{Acknowledgements}
-        \lipsum[5]
+    \begin{block}{Brief Background}
+        \lipsum[2]
+        \cite{ashtekarLoopQuantumGravity2017}
+%        \lipsum[3]
+        $$\int_{\partial \Omega} \omega = \int_{\Omega} d \omega$$
+        \lipsum[2]
+        \cite{anselmiPredictionsQuantumGravity2020}
     \end{block}
 
     \begin{block}{References}
-        \lipsum[6]
+%        \lipsum[1]
+        \bibliographystyle{aipnum4-1}
+		\bibliography{references}
     \end{block}
 
-    \begin{block}{Contact information}
-        \lipsum[75]
-    \end{block}
+%    \begin{block}{Contact information}
+%        \lipsum[75]
+%    \end{block}
 \end{column}
 
 
@@ -100,9 +108,10 @@
 \begin{textblock}{0.5}(0.18, 0.94)
     \color{white}
     \sffamily
-    \textbf{Write here using textblock}
+    \textbf{Eberly College of Science}
     \\
-    Such as contact information or references
+    Department of Physics
+    
 \end{textblock}
 
 
