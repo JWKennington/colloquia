@@ -87,30 +87,32 @@
 
 \definecolor{psured}{cmyk}{0, 1, 1, 0}
 \definecolor{psuwhite}{cmyk}{0, 0, 0, 0}
-\definecolor{psublack}{cmyk}{100, 90, 13, 68}
-\definecolor{psuheader}{cmyk}{0, 0, 0, 0.6}
-\definecolor{psubackground}{cmyk}{0, 0, 0, 0.2}
+\definecolor{psunittblue}{HTML}{041E42}
+\definecolor{psudarkblue}{HTML}{262c3a}
+\definecolor{psudarkgrey}{HTML}{999999}
+\definecolor{psuheader}{HTML}{1173ca}
+\definecolor{psubackground}{HTML}{F5F5F5}
 \definecolor{psulink}{HTML}{0B5A9D}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \setbeamercolor{structure}{fg = psuheader}
 \setbeamercolor{alerted text}{fg = psured}
-\setbeamercolor{background canvas}{fg = psublack, bg = psubackground}
-\setbeamercolor{headline}{fg = psuwhite, bg = psublack}
-\setbeamercolor{title in headline}{fg = psured}
-\setbeamercolor{author in headline}{fg = psuwhite}
-\setbeamercolor{footline}{fg = psuwhite, bg = psublack}
+\setbeamercolor{background canvas}{fg = psudarkblue, bg = psubackground}
+\setbeamercolor{headline}{fg = psuwhite, bg = psudarkblue}
+\setbeamercolor{title in headline}{fg = psuwhite}
+\setbeamercolor{author in headline}{fg = psuheader}
+\setbeamercolor{footline}{fg = psuwhite, bg = psudarkblue}
 
 
 \setbeamercolor{block title}{fg = psuwhite, bg = structure}
-\setbeamercolor{block title example}{fg = psuwhite, bg = psublack}
+\setbeamercolor{block title example}{fg = psuwhite, bg = psudarkblue}
 \setbeamercolor{block title alerted}{fg = psuwhite, bg = psured}
 
 
-\setbeamercolor{block body} {fg = psublack, bg = psuwhite}
-\setbeamercolor{block body example} {fg = psublack, bg = psuwhite}
-\setbeamercolor{block body alerted} {fg = psublack, bg = psuwhite}
+\setbeamercolor{block body} {fg = psudarkblue, bg = psuwhite}
+\setbeamercolor{block body example} {fg = psudarkblue, bg = psuwhite}
+\setbeamercolor{block body alerted} {fg = psudarkblue, bg = psuwhite}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -158,9 +160,9 @@
     \begin{beamercolorbox}[wd = \paperwidth,
                            leftskip  = 3cm,
                            rightskip = 3cm plus 20cm]{headline}
-        \vskip-0.5cm
-        \includegraphics[scale = 1.5]
-        {psuposter-images/psuposter-logo-norsk}
+%        \vskip-0.5cm
+        \includegraphics[scale = 0.5]
+        {psuposter-images/psu-label-grey}
         \usebeamerfont{title in headline}
         \usebeamercolor{title in headline}
         \color{fg}
@@ -193,7 +195,7 @@
     \begin{beamercolorbox}[wd = \paperwidth]{footline}
         \vskip2cm
         \hskip4.1cm
-        \includegraphics[scale = 1.5]{psuposter-images/psuposter-apollon}
+        \includegraphics[scale = .6]{psuposter-images/psu-badge-white}
         \vskip2cm
     \end{beamercolorbox}
 }
