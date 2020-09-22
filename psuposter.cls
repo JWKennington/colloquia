@@ -39,22 +39,24 @@
 
 
 \RequirePackage[size = a0, scale = 1.5]{beamerposter}
-\RequirePackage{etoolbox}
+%\RequirePackage{etoolbox}
+\RequirePackage{amsmath}
 \RequirePackage{pgfpages}
 \RequirePackage[utf8]{inputenx}
 \RequirePackage[T1]{fontenc}
-\RequirePackage{calc}
-\RequirePackage[final]{microtype}
+%\RequirePackage{calc}
+%\RequirePackage[final]{microtype}
 \RequirePackage{lmodern}
-\RequirePackage[scaled]{beramono}
+%\RequirePackage[scaled]{beramono}
 %\RequirePackage{hyperref}
+\RequirePackage{natbib}
 
 
-\hypersetup{colorlinks,
+\hypersetup{colorlinks = true,
             urlcolor  = psuheader,
             linkcolor = psuheader,
-            citecolor =,
-            filecolor =}
+            citecolor = psuheader,
+            filecolor = psuheader}
 \renewcommand{\sfdefault}{phv}
 \DeclareFontShape{OMX}{cmex}{m}{n}
 {
