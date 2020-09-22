@@ -29,7 +29,7 @@
 \DeclareOption{a6paper}{\def\psuposter@size{a6paper}}
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{beamer}}
 
-\ExecuteOptions{a0paper}
+\ExecuteOptions{a4paper}
 \ExecuteOptions{portrait}
 \ProcessOptions
 \relax
@@ -47,11 +47,12 @@
 \RequirePackage[final]{microtype}
 \RequirePackage{lmodern}
 \RequirePackage[scaled]{beramono}
+%\RequirePackage{hyperref}
 
 
 \hypersetup{colorlinks,
-            urlcolor  = psulink,
-            linkcolor =,
+            urlcolor  = psuheader,
+            linkcolor = psuheader,
             citecolor =,
             filecolor =}
 \renewcommand{\sfdefault}{phv}
@@ -81,7 +82,7 @@
 
 \setlength{\labelsep}{3ex}
 \setlength{\leftmargini}{18ex}
-\setbeamersize{text margin left = 3cm, text margin right = 3cm}
+\setbeamersize{text margin left = 2cm, text margin right = 3cm}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -118,7 +119,7 @@
 
 \setbeamerfont{title in headline}{family = \sffamily,
                                   series = \bfseries,
-                                  size   = \VeryHuge}
+                                  size   = \huge}
 \setbeamerfont{author in headline}{family = \sffamily,
                                    series = \bfseries,
                                    size   = \Large}
@@ -184,7 +185,7 @@
         }
         \vskip3cm
     \end{beamercolorbox}
-    \vskip1cm
+%    \vskip1cm
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -241,7 +242,7 @@
         \end{minipage}
     \vskip0.2ex
     \end{beamercolorbox}
-    \vskip3cm
+    \vskip2cm
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -285,7 +286,7 @@
         \end{minipage}
     \vskip0.2ex
     \end{beamercolorbox}
-    \vskip3cm
+    \vskip2cm
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -329,7 +330,7 @@
         \end{minipage}
     \vskip0.2ex
     \end{beamercolorbox}
-    \vskip3cm
+    \vskip2cm
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
