@@ -11,5 +11,4 @@ A “preview poster” serves to inform as well as generate interest in an upcom
 
 - [Template](https://latexonline.cc/compile?git=https%3A%2F%2Fgithub.com%2FJWKennington%2Fcolloquia&target=template.tex&command=pdflatex&trackId=1601501572360)
 - [2020-09-24 Nima Arkani-Hamed](./20200924-Arkani-Hamed/20200924-Arkani-Hamed.pdf)
-- [2020-10-01 Sebastiano Bernuzzi](./20201001-Bernuzzi/20201001-Bernuzzi.pdf)
-
+- [2020-10-01 Sebastiano Bernuzzi](./20201001-Bernuzzi/20201001-Sebastiano-Bernuzzi.pdf)
