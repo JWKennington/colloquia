@@ -121,7 +121,7 @@
 
 \setbeamerfont{title in headline}{family = \sffamily,
                                   series = \bfseries,
-                                  size   = \huge}
+                                  size   = {\fontsize{70}{46}}}
 \setbeamerfont{author in headline}{family = \sffamily,
                                    series = \bfseries,
                                    size   = \Large}
