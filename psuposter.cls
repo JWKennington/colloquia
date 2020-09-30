@@ -1,13 +1,25 @@
-%% Implemented by Martin Helsø (martibhe@math.psu.no)
-%% Version: 23-09-2019
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                   %
+%       Penn State Colloquium Poster Class          %
+%                                                   %
+% Author: James Kennington (jwkennington@psu.edu)   %
+% Based on template by: Martin Helsø                %
+% Version: 2020-09-01                               %
+%                                                   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                  CLASS DEFINITION                 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \NeedsTeXFormat{LaTeX2e}
-
-
 \ProvidesClass{psuposter}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                   CLASS OPTIONS                   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Orientation options
 \DeclareOption{portrait}
 {
     \PassOptionsToPackage{orientation = portrait}{beamerposter}
@@ -19,7 +31,7 @@
     \def\psuposter@orientation{landscape}
 }
 
-
+% Paper size options
 \DeclareOption{a0paper}{\def\psuposter@size{a0paper}}
 \DeclareOption{a1paper}{\def\psuposter@size{a1paper}}
 \DeclareOption{a2paper}{\def\psuposter@size{a2paper}}
@@ -29,28 +41,27 @@
 \DeclareOption{a6paper}{\def\psuposter@size{a6paper}}
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{beamer}}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                CLASS OPTIONS CONFIG               %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \ExecuteOptions{a4paper}
 \ExecuteOptions{portrait}
 \ProcessOptions
 \relax
-
-
 \LoadClass[t]{beamer}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%           PACKAGE DEPENDENCIES AND SETUP          %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \RequirePackage[size = a0, scale = 1.5]{beamerposter}
-%\RequirePackage{etoolbox}
 \RequirePackage{amsmath}
 \RequirePackage{pgfpages}
 \RequirePackage[utf8]{inputenx}
 \RequirePackage[T1]{fontenc}
-%\RequirePackage{calc}
-%\RequirePackage[final]{microtype}
 \RequirePackage{lmodern}
-%\RequirePackage[scaled]{beramono}
-%\RequirePackage{hyperref}
 \RequirePackage{natbib}
-
 
 \hypersetup{colorlinks = true,
             urlcolor  = psuheader,
@@ -71,8 +82,6 @@
 \setlength{\emergencystretch}{1em}
 \frenchspacing
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \usefonttheme{serif}
 \useinnertheme{rectangles}
 \setbeamertemplate{navigation symbols}{}
@@ -81,13 +90,16 @@
 \setbeamertemplate{qed symbol}{\(\blacksquare\)}
 \setbeamertemplate{itemize items}{\color{itemize item.fg}\(\blacksquare\)}
 
-
 \setlength{\labelsep}{3ex}
 \setlength{\leftmargini}{18ex}
 \setbeamersize{text margin left = 2cm, text margin right = 3cm}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\templateimagepath}{./} 
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                 COLOR DEFINITIONS                 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \definecolor{psured}{cmyk}{0, 1, 1, 0}
 \definecolor{psuwhite}{cmyk}{0, 0, 0, 0}
 \definecolor{psunittblue}{HTML}{041E42}
@@ -97,8 +109,10 @@
 \definecolor{psubackground}{HTML}{F5F5F5}
 \definecolor{psulink}{HTML}{0B5A9D}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%              THEME COLOR USAGE CONFIG             %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \setbeamercolor{structure}{fg = psuheader}
 \setbeamercolor{alerted text}{fg = psured}
 \setbeamercolor{background canvas}{fg = psudarkblue, bg = psubackground}
@@ -107,28 +121,27 @@
 \setbeamercolor{author in headline}{fg = psuheader}
 \setbeamercolor{footline}{fg = psuwhite, bg = psudarkblue}
 
-
 \setbeamercolor{block title}{fg = psuwhite, bg = structure}
 \setbeamercolor{block title example}{fg = psuwhite, bg = psudarkblue}
 \setbeamercolor{block title alerted}{fg = psuwhite, bg = psured}
-
 
 \setbeamercolor{block body} {fg = psudarkblue, bg = psuwhite}
 \setbeamercolor{block body example} {fg = psudarkblue, bg = psuwhite}
 \setbeamercolor{block body alerted} {fg = psudarkblue, bg = psuwhite}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                 FONT STYLE CONFIG                 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \setbeamerfont{title in headline}{family = \sffamily,
                                   series = \bfseries,
-                                  size   = {\fontsize{70}{46}}}
+                                  size   = \LARGE}
 \setbeamerfont{author in headline}{family = \sffamily,
                                    series = \bfseries,
                                    size   = \Large}
 \setbeamerfont{institute}{family = \sffamily,
                           series = \mdseries,
                           size   = \normalsize}
-
 
 \setbeamerfont{block title}{family = \sffamily,
                             series = \bfseries,
@@ -140,7 +153,6 @@
                                     series = \bfseries,
                                     size   = \large}
 
-
 \setbeamerfont{block body}{family = \rmfamily,
                            series = \normalfont,
                            size   = \normalsize}
@@ -151,21 +163,21 @@
                                    series = \normalfont,
                                    size   = \normalsize}
 
-
 \setbeamerfont{item projected}{family = \sffamily,
                                series = \bfseries,
                                size   = \small}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%             TEMPLATE COMPONENT: HEADER            %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \setbeamertemplate{headline}
 {
     \begin{beamercolorbox}[wd = \paperwidth,
                            leftskip  = 3cm,
                            rightskip = 3cm plus 20cm]{headline}
-%        \vskip-0.5cm
         \includegraphics[scale = 0.5]
-        {psuposter-images/psu-label-grey}
+        {\templateimagepath template-images/psu-label-grey}
         \usebeamerfont{title in headline}
         \usebeamercolor{title in headline}
         \color{fg}
@@ -187,24 +199,27 @@
         }
         \vskip3cm
     \end{beamercolorbox}
-%    \vskip1cm
 }
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%             TEMPLATE COMPONENT: FOOTER            %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \setbeamertemplate{footline}
 {
     \leavevmode
     \begin{beamercolorbox}[wd = \paperwidth]{footline}
         \vskip2cm
         \hskip4.1cm
-        \includegraphics[scale = .6]{psuposter-images/psu-badge-white}
+        \includegraphics[scale = .6]{\templateimagepath template-images/psu-badge-white}
         \vskip2cm
     \end{beamercolorbox}
 }
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%            TEMPLATE COMPONENT: BODY BLOCK         %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \setbeamertemplate{block begin}
 {
     \setbeamercolor{itemize item}  {fg = block title.bg}
@@ -238,7 +253,6 @@
              \setlength{\abovecaptionskip}{1ex}
 }
 
-
 \setbeamertemplate{block end}
 {
         \end{minipage}
@@ -247,8 +261,10 @@
     \vskip2cm
 }
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%        TEMPLATE COMPONENT: BODY EXAMPLE BLOCK     %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \setbeamertemplate{block example begin}
 {
     \setbeamercolor{itemize item}  {fg = block title example.bg}
@@ -282,7 +298,6 @@
              \setlength{\abovecaptionskip}{1ex}
 }
 
-
 \setbeamertemplate{block example end}
 {
         \end{minipage}
@@ -291,8 +306,10 @@
     \vskip2cm
 }
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%         TEMPLATE COMPONENT: BODY ALERT BLOCK      %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \setbeamertemplate{block alerted begin}
 {
     \setbeamercolor{itemize item}  {fg = block title alerted.bg}
@@ -326,7 +343,6 @@
              \setlength{\abovecaptionskip}{1ex}
 }
 
-
 \setbeamertemplate{block alerted end}
 {
         \end{minipage}
@@ -335,8 +351,10 @@
     \vskip2cm
 }
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                 ENUMERATION STYLE                 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newcommand{\enumitem}[1]
 {{%
     \leavevmode\unskip
@@ -344,12 +362,13 @@
     \usebeamertemplate*{enumerate item}%
 }}
 
-
 \newcommand{\enumref}[1]{\enumitem{\ref{#1}}}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                  LAYOUT SETTINGS                  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \pgfpagesdeclarelayout{resize and center}
 {
     \def\pgfpageoptionborder{0pt}
@@ -370,13 +389,14 @@
     }
 }
 
-
 \ifdefstring{\psuposter@size}{a0paper}{}
 {
     \pgfpagesuselayout{resize and center}[\psuposter@size,
                                           \psuposter@orientation]
 }
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%               END CLASS DEFINITION                %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \endinput

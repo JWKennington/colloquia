@@ -1,119 +1,118 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Class options                        %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Orientation:                         %
-% portrait (default), landscape        %
-%                                      %
-% Paper size:                          %
-% a0paper (default), a1paper, a2paper, %
-% a3paper, a4paper, a5paper, a6paper   %
-%                                      %
-% Language:                            %
-% english (default), norsk             %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                   %
+%     Penn State Colloquium Poster Template         %
+%                                                   %
+% Uses Penn State Colloquium class, with options:   %
+%                                                   %
+% Orientation:                                      %
+%     portrait (default), landscape                 %
+%                                                   %
+% Paper size:                                       %
+%     a4paper (default), a0paper, a1paper, a2paper, %
+%     a3paper, a5paper, a6paper                     %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \documentclass{psuposter}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%               Package Dependencies                %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{natbib}
 \usepackage{lipsum}                                % Dummy text
 \usepackage[figwidth = 0.98\linewidth]{todonotes}  % Dummy image (and more!)
 \usepackage[absolute, overlay]{textpos}            % Figure placement
 \setlength{\TPHorizModule}{\paperwidth}
 \setlength{\TPVertModule}{\paperheight}
-
 \setcitestyle{numbers,square}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                 AUTHOR AND TITLE                  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{Some Lengthy and Technical Title}
-\author
-{%
-    Speaker Name\inst{1}
-}
-%% Optional:
-\institute
-{
-    \inst{1} University of Speaker, Department of Speaker
-}
-% Or:
-%\institute{Contact information}
+\author{Speaker Name\inst{1}}
+\institute{\inst{1} University of Speaker, Department of Speaker}
 
 
-%% Remove footline:
-%\setbeamertemplate{footline}{}
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                  BEGIN DOCUMENT                   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 \begin{frame}
-\begin{columns}[onlytextwidth]
+\begin{columns}
+\begin{column}{0.45\textwidth - 1cm}
 
-
-\begin{column}{0.5\textwidth - 1.5cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                 BLOCK: BIOGRAPHY                  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \begin{block}{Speaker Biographic Summary}
     	\begin{center}
-	    	\includegraphics[width=0.6\textwidth]{psuposter-images/lion}    		
+	    	\includegraphics[width=0.6\textwidth]{images/lion}    		
     	\end{center}
         This paragraph represents the speaker bio. Include their name, affiliation (yes it is included above too..). Also describe their educational background briefly, as well as research interests. If they have won any notable awards / etc, try to mention that as well.
     \end{block}
-%
-%    \begin{exampleblock}{Does it come in black?}
-%        Sure, use an \textbf{exampleblock}!
-%    \end{exampleblock}
-%
-%    \begin{alertblock}{How do you make it pop?}
-%        Use an \alert{alertblock}!
-%    \end{alertblock}
-%
-%    \begin{block}{Method}
-%        \lipsum[1]
-%    \end{block}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%            BLOCK: RESEARCH INTERESTS              %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \begin{block}{Research Interests}
         \lipsum[2]
         \begin{center}
-	    	\includegraphics[width=0.6\textwidth]{psuposter-images/sample-research}    		
+	    	\includegraphics[width=0.6\textwidth]{images/sample-research}    		
     	\end{center}
     \end{block}
 \end{column}
 
+\begin{column}{0.55\textwidth - 1cm}
 
-\begin{column}{0.5\textwidth - 1.5cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                 BLOCK: ABSTRACT                   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \begin{block}{Talk Abstract}
         \lipsum[4]
     \end{block}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                BLOCK: BACKGROUND                  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \begin{block}{Brief Background}
         \lipsum[2]
-        \cite{ashtekarLoopQuantumGravity2017}
-%        \lipsum[3]
+        \cite{DepartmentPhysicsEberly}
         $$\int_{\partial \Omega} \omega = \int_{\Omega} d \omega$$
         \lipsum[2]
-        \cite{anselmiPredictionsQuantumGravity2020}
+        \cite{SearchArXivEprint}
     \end{block}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                 BLOCK: REFERENCES                 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \begin{block}{References}
-%        \lipsum[1]
         \bibliographystyle{aipnum4-1}
 		\bibliography{references}
     \end{block}
 
-%    \begin{block}{Contact information}
-%        \lipsum[75]
-%    \end{block}
 \end{column}
-
-
 \end{columns}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                    FOOTER TEXT                    %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{textblock}{0.5}(0.18, 0.94)
     \color{white}
     \sffamily
     \textbf{Eberly College of Science}
     \\
     Department of Physics
-    
 \end{textblock}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                   END TEMPLATE                    %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{frame}
 \end{document}
