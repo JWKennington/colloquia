@@ -99,6 +99,11 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                 COLOR DEFINITIONS                 %
+%                                                   %
+% Color theme definitions borrowed from:            %
+%   https://sites.psu.edu/liberalartscommunications %
+%   /branding/colors/                               %
+%                                                   %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \definecolor{psured}{cmyk}{0, 1, 1, 0}
 \definecolor{psuwhite}{cmyk}{0, 0, 0, 0}
