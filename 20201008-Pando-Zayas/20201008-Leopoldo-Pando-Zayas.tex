@@ -40,7 +40,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 \begin{frame}
-\begin{columns}
+\begin{columns}[t, totalwidth=\textwidth]
 \begin{column}{0.45\textwidth - 1cm}
 
 
@@ -66,7 +66,6 @@
     	\textit{Above: AdS / CFT visual of black hole entropy}. \cite{zayasMicroscopicAccountBlack2020}
     \end{block}
 \end{column}
-
 \begin{column}{0.55\textwidth - 1cm}
 
 
@@ -74,7 +73,7 @@
 %                 BLOCK: ABSTRACT                   %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \begin{block}{Talk Abstract}
-        The anti-de Sitter/Conformal Field Theory (AdS/CFT) correspondence states that for a certain quantum system with gravity there is an equivalent field theory system without gravity.  I will review some recent developments within the AdS/CFT correspondence where the Bekenstein-Hawking entropy of certain black holes has been given a microscopic, statistical mechanical foundation in terms of partition functions of the dual field theories. At the quantum level, the entropy of black holes is not exactly equal to one quarter of the area of the event horizon; it receives tiny quantum corrections proportional to the logarithm of the area. I will describe how these logarithmic corrections to the black hole entropy can be computed and how to match them successfully to a microscopic description based on the AdS/CFT correspondence.  
+        The Anti-de Sitter/Conformal Field Theory (AdS/CFT) correspondence states that for a certain quantum system with gravity there is an equivalent field theory system without gravity.  I will review some recent developments within the AdS/CFT correspondence where the Bekenstein-Hawking entropy of certain black holes has been given a microscopic, statistical mechanical foundation in terms of partition functions of the dual field theories. At the quantum level, the entropy of black holes is not exactly equal to one quarter of the area of the event horizon; it receives tiny quantum corrections proportional to the logarithm of the area. I will describe how these logarithmic corrections to the black hole entropy can be computed and how to match them successfully to a microscopic description based on the AdS/CFT correspondence.  
     \end{block}
 
 
@@ -82,13 +81,26 @@
 %                BLOCK: BACKGROUND                  %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \begin{block}{Brief Background}
-        Bekenstein-Hawking Entropy summary
-        \cite{baggioliGravityHolographyApplications}
-        \begin{center}
-	    	\includegraphics[width=0.45\textwidth]{images/bekenstein-hawking-entropy}    		
-    	\end{center}
-		Ads/CFT summary.
-        \cite{zayasMicroscopicAccountBlack2020}
+        The second law of thermodynamics requires that black holes (BHs) have entropy. Typically, entropy scales with the volume of the region in which micro-states live. However, BHs forbid access to states in the interior. The Bekenstein-Hawking entropy scales with the area of the horizon of the BH (depicted below). \cite{baggioliGravityHolographyApplications}
+
+         \begin{columns}
+        	\begin{column}{.5\linewidth}
+            	\begin{center}
+		    		\includegraphics[width=0.85\textwidth]{images/bekenstein-hawking-entropy}    		
+    			\end{center}
+    	    \end{column}
+        	\begin{column}{.5\linewidth}
+        		\vspace{5cm}
+            	$$\HUGE{S_{BH} = \frac{A}{4L_p^2}}$$ 
+            	
+            	$$A=16 \pi (GM/c^2)^2$$
+            	
+            	$$(\text{Schwarzschild})$$
+    	    \end{column}
+	    \end{columns}
+	    \vspace{1cm}
+        
+    	That a $d$-dimensional conformal field theory (CFT) lives on the “boundary” of a $(d + 1)$-dimensional asymptotic Anti-de-Sitter (AdS) space can be seen as an explicit realization of the holographic principle. Using AdS/CFT correspondence, entropy counting was demonstrated for a class of five-dimensional extremal black holes, which provided a statistical interpretation of Bekenstein Hawking entropy. \cite{stromingerMicroscopicOriginBekensteinHawking1996} The ability to count states in CFT and map between AdS/CFT could provide a concrete way of counting the microstates of the BH and resolve the standing question of whether the Bekenstein-Hawking entropy counts all or only some of the microstates of the black hole. \cite{zayasMicroscopicAccountBlack2020}
 
     \end{block}
 
