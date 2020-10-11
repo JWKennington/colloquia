@@ -51,7 +51,7 @@
     	\begin{center}
     		\includegraphics[width=0.6\textwidth]{images/kandala}
     	\end{center}
-    	\href{}{Abhinav Kandala} is an experimental physicist in the quantum computing group at the IBM T.J. Watson Research Center. He received his Bachelors degree in Engineering Physics from the Indian institute of Technology (Bombay), and a PhD in Physics from The Pennsylvania State University, under the supervision of Prof. Nitin Samarth. Dr. Kandala went on to join the quantum computing group at IBM Research for his postdoctoral work and studied the applicability of a noisy superconducting quantum processor to simulate small molecules and quantum magnets. This work was recognized by MIT Technology Review as one of 10 Breakthrough Technologies 2018, and by C\&E News’ Research of the Year 2017. \cite{Kandala}
+    	\href{https://researcher.watson.ibm.com/researcher/view.php?person=us-akandala}{Abhinav Kandala} is an experimental physicist in the quantum computing group at the IBM T.J. Watson Research Center. He received his Bachelors degree in Engineering Physics from the Indian Institute of Technology (Bombay) and a PhD in Physics from The Pennsylvania State University. His dissertation at Penn State centered on quantum transport in topological insulators and quantum anomalous Hall insulators. Dr. Kandala joined the quantum computing group at IBM Research for his post-doctoral work and  studied the applicability of a noisy super-conducting quantum processor to simulate small molecules and quantum magnets. This work, published as a cover article in Nature \cite{kandalaHardwareefficientVariationalQuantum2017}, was recognized by C\&E News’ Research of the Year in 2017 and by MIT Technology Review as one of 10 Breakthrough Technologies in 2018. Dr. Kandala’s honors include the Eklund Award for Scientific Communication (Penn State, 2014) and selection as one of MIT’s “35 Innovators under 35” (2019).
     \end{block}
 
 
@@ -59,11 +59,11 @@
 %            BLOCK: RESEARCH INTERESTS              %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \begin{block}{Research Interests}
-        Dr. Kandala's research interests focus on the coherence and control of superconducting qubits, multi-qubit device characterization, and applications of near-term quantum computers. His prior research interests spanned exploratory semiconductors, spintronics, nano-science and solar cells, providing extensive experience with nano-fabrication, cryogenic magneto-transport, and materials characterization techniques. His most recent work has focused on error mitigation for computations performed on noisy quantum processors \cite{Kandala}
+        Dr. Kandala's research interests focus on the coherence and control of superconducting qubits, multi-qubit device characterization, and applications of near-term quantum computers. His prior research interests spanned topological insulators, semiconductor spintronics, nanoscience and solar cells, providing extensive experience with nano-fabrication, cryogenic magneto- transport, and materials characterization techniques. His most recent work has focused on error mitigation for computations performed on noisy quantum processors. \cite{kandalaErrorMitigationExtends2019}
         \begin{center}
-	    	\includegraphics[width=0.98\textwidth]{images/error-mitigation}    		
+	    	\includegraphics[width=0.75\textwidth]{images/error-mitigation}    		
     	\end{center}
-    	\textit{Error mitigation of random 1-qubit and 2-qubit circuits}. \cite{kandalaExtendingComputationalReach2019}
+    	\textit{Error mitigation of random 1-qubit and 2-qubit circuits}. \cite{kandalaErrorMitigationExtends2019}
     \end{block}
 \end{column}
 \begin{column}{0.55\textwidth - 1cm}
@@ -81,13 +81,13 @@
 %                BLOCK: BACKGROUND                  %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \begin{block}{Brief Background}
-        A bit about qubits \cite{jazaeriReviewQuantumComputing2019}
+        A qubit is the  basic information container in quantum computing (QC), analogous to the bit in classical computing, and can be in both ground and excited states at the same time. The two logical states of each qubit are mapped onto the eigenstates of a suitable physical system, e.g. particle spin, and the resulting superposition can be visualized using the Bloch sphere (below). \cite{jazaeriReviewQuantumComputing2019}
 
         \begin{center}
-		   	\includegraphics[width=0.55\textwidth]{images/bloch}    		
+		   	\includegraphics[width=0.5\textwidth]{images/bloch}    		
     	\end{center}
         
-		Error mitigation basics \cite{kandalaExtendingComputationalReach2019}
+		As QC experiments increase in complexity, the noisiness of current hardware introduces problems related to measurement errors. Reducing these errors is critical for performing any quantum algorithm. In contrast to heavier, error-correction codes, error mitigation schemes offer a low-overhead solution by combining outcomes of multiple experiments in a way that cancels the noise contributions in quanities of interest. \cite{bravyiMitigatingMeasurementErrors2020}
 
     \end{block}
 
@@ -97,6 +97,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \begin{block}{References}
         \bibliographystyle{aipnum4-1}
+%        \bibliographystyle{iopart-num}
 		\bibliography{../references}
     \end{block}
 
