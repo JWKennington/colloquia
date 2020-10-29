@@ -16,3 +16,7 @@ A “preview poster” serves to inform as well as generate interest in an upcom
 - [2020-10-15 Abhinav Kandala](./20201015-Kandala/20201015-Abhinav-Kandala.pdf)
 - [2020-10-22 Joseph Berry](./20201022-Berry/20201022-Joseph-Berry.pdf)
 - [2020-10-29 Andrew Strominger](./20201029-Strominger/20201029-Andrew-Strominger.pdf)
+
+
+## Acknowledgements
+These posters were made in collaboration with [Unnati Akhouri](https://science.psu.edu/physics/people/unnati-akhouri), and we would both like to thank the many speakers and hosts who helped review and edit these posters.
