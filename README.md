@@ -15,3 +15,4 @@ A “preview poster” serves to inform as well as generate interest in an upcom
 - [2020-10-08 Leopoldo Pando Zayas](./20201008-Pando-Zayas/20201008-Leopoldo-Pando-Zayas.pdf)
 - [2020-10-15 Abhinav Kandala](./20201015-Kandala/20201015-Abhinav-Kandala.pdf)
 - [2020-10-22 Joseph Berry](./20201022-Berry/20201022-Joseph-Berry.pdf)
+- [2020-10-29 Andrew Strominger](./20201029-Strominger/20201029-Andrew-Strominger.pdf)
