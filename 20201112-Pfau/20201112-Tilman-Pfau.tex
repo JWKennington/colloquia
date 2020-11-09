@@ -1,0 +1,128 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                   %
+%     Penn State Colloquium Poster Template         %
+%                                                   %
+% Uses Penn State Colloquium class, with options:   %
+%                                                   %
+% Orientation:                                      %
+%     portrait (default), landscape                 %
+%                                                   %
+% Paper size:                                       %
+%     a4paper (default), a0paper, a1paper, a2paper, %
+%     a3paper, a5paper, a6paper                     %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass{../psuposter}
+\renewcommand{\templateimagepath}{../} 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%               Package Dependencies                %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{natbib}
+\usepackage{lipsum}                                % Dummy text
+\usepackage[figwidth = 0.98\linewidth]{todonotes}  % Dummy image (and more!)
+\usepackage[absolute, overlay]{textpos}            % Figure placement
+\usepackage{braket}
+\setlength{\TPHorizModule}{\paperwidth}
+\setlength{\TPVertModule}{\paperheight}
+\setcitestyle{numbers,square}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                 AUTHOR AND TITLE                  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{Quantum Droplets and Supersolidity in a Dipolar Quantum Gas}
+\author{Tilman Pfau}
+\institute{University of Stuttgart}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                  BEGIN DOCUMENT                   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\begin{frame}
+\begin{columns}[t, totalwidth=\textwidth]
+\begin{column}{0.45\textwidth - 1cm}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                 BLOCK: BIOGRAPHY                  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{block}{Speaker Biographic Summary}
+    	\begin{center}
+    		\includegraphics[width=0.6\textwidth]{images/pfau}
+    	\end{center}
+    	\href{https://www.uni-stuttgart.de/en/press/experts/Prof.-Tilman-Pfau/}{Dr. Tilman Pfau} is a Professor and Chair of Phototonics at the University of Stuttgart. 
+    	He completed his Ph.D. in the field of atom optics at the University of Konstanz under the supervision of Prof. Jürgen Mlynek in 1994. 
+    	In 2000, he founded a new institute at the University of Stuttgart for the experimental study of interacting many body systems, and he is also co-director of the Center for Integrated Quantum Science and Technology (IQST) in Stuttgart and Ulm. 
+%    	He has organized various large-scale outreach activities, and serves as a spokesperson for various research networks. 
+    	Prof. Pfau is an elected fellow of the Optical Society, the American Physical Society, and the American Association for the Advancement of Science, he also is a member of German and European physical societies. Dr. Pfau received the 1998 Rudolf-Kaiser Award and in 2014, the Gentner-Kastler Prize of the Société Française de Physique and the German Physical Society. He also received the APS Herbert P. Broida Prize in 2017.
+    \end{block}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%            BLOCK: RESEARCH INTERESTS              %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{block}{Research Interests}
+        Prof. Pfau pioneered the cooling and study of dipolar quantum gases starting from the first observation of dipolar effects in a chromium condensate, to the observation of self-bound droplets of a dilute magnetic quantum liquid. He has studied the Rydberg excitation of atoms in a quantum gas, and observed the first ultralong-range Rydberg molecules, as well as investigated the exaggerated properties of this kind of molecule. 
+        \begin{center}
+	    	\includegraphics[width=0.95\textwidth]{images/ferro}    		
+    	\end{center}
+    	\textit{Rosensweig instability of a ferrofluid in magnetic field.} \cite{lahayePhysicsDipolarBosonic2009}
+    \end{block}
+\end{column}
+\begin{column}{0.55\textwidth - 1cm}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                 BLOCK: ABSTRACT                   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{block}{Talk Abstract}
+         The discovery of high-energy cosmic neutrinos opened a new window of astroparticle physics. Their origin is a new mystery in the field, which is tightly connected to the long-standing puzzle about the origin of cosmic rays. I will discuss theoretical implications of the latest results on high-energy neutrino and cosmic-ray observations, and demonstrate the power of multi-messenger approaches. In particular, I will show that the observed fluxes of neutrinos, gamma rays, and extragalactic cosmic rays can be understood in a unified manner. I will also highlight our recent developments about astrophysical neutrino emission from gamma-ray dark sources and violent transient phenomena such as supermassive black hole flares. I may discuss some possibilities of utilizing high-energy neutrinos as a probe of physics beyond the Standard Model.
+    \end{block}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                BLOCK: BACKGROUND                  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{block}{Brief Background}
+        Quantum droplets \cite{lahayePhysicsDipolarBosonic2009} 
+
+        \begin{center}
+		   	\includegraphics[width=0.95\textwidth]{images/droplet}    		
+    	\end{center}
+		 Supersolids \cite{bottcherNewStatesMatter2020} 
+
+    \end{block}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                 BLOCK: REFERENCES                 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{block}{References}
+        \bibliographystyle{aipnum4-1}
+%        \bibliographystyle{iopart-num}
+		\bibliography{../references}
+    \end{block}
+
+\end{column}
+\end{columns}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                    FOOTER TEXT                    %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{textblock}{0.5}(0.18, 0.94)
+    \color{white}
+    \sffamily
+    \textbf{Eberly College of Science}
+    \\
+    Department of Physics
+\end{textblock}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                   END TEMPLATE                    %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{frame}
+\end{document}
