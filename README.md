@@ -16,6 +16,9 @@ A “preview poster” serves to inform as well as generate interest in an upcom
 - [2020-10-15 Abhinav Kandala](./20201015-Kandala/20201015-Abhinav-Kandala.pdf)
 - [2020-10-22 Joseph Berry](./20201022-Berry/20201022-Joseph-Berry.pdf)
 - [2020-10-29 Andrew Strominger](./20201029-Strominger/20201029-Andrew-Strominger.pdf)
+- [2020-11-05 Kohta Murase](./20201105-Murase/20201105-Kohta-Murase.pdf)
+- [2020-11-12 Tilman Pfau](./20201112-Pfau/20201112-Tilman-Pfau.pdf)
+- [2020-11-19 Immanuel Bloch](./20201119-Bloch/20201119-Immanuel-Bloch.pdf)
 
 
 ## Acknowledgements
