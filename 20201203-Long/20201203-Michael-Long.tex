@@ -1,0 +1,124 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                   %
+%     Penn State Colloquium Poster Template         %
+%                                                   %
+% Uses Penn State Colloquium class, with options:   %
+%                                                   %
+% Orientation:                                      %
+%     portrait (default), landscape                 %
+%                                                   %
+% Paper size:                                       %
+%     a4paper (default), a0paper, a1paper, a2paper, %
+%     a3paper, a5paper, a6paper                     %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass{../psuposter}
+\renewcommand{\templateimagepath}{../} 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%               Package Dependencies                %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{natbib}
+\usepackage{lipsum}                                % Dummy text
+\usepackage[figwidth = 0.98\linewidth]{todonotes}  % Dummy image (and more!)
+\usepackage[absolute, overlay]{textpos}            % Figure placement
+\usepackage{braket}
+\setlength{\TPHorizModule}{\paperwidth}
+\setlength{\TPVertModule}{\paperheight}
+\setcitestyle{numbers,square}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                 AUTHOR AND TITLE                  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{Comparative neurobiology of vocal communication}
+\author{Michael Long}
+\institute{School of Medicine, New York University}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                  BEGIN DOCUMENT                   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\begin{frame}
+\begin{columns}[t, totalwidth=\textwidth]
+\begin{column}{0.45\textwidth - 1cm}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                 BLOCK: BIOGRAPHY                  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{block}{Speaker Biographic Summary}
+    	\begin{center}
+    		\includegraphics[width=0.58\textwidth]{images/long}
+    	\end{center}
+    	\href{https://med.nyu.edu/faculty/michael-a-long}{Dr. Michael Long} is    
+    \end{block}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%            BLOCK: RESEARCH INTERESTS              %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{block}{Research Interests}
+        Dr. Long's research focuses on  \cite{} 
+        \begin{center}
+	    	\includegraphics[width=0.85\textwidth]{images/diag-hole}    		
+    	\end{center}
+    	\textit{Decomposition of spin correlations, diagonal hole pair.} \cite{}
+    \end{block}
+\end{column}
+\begin{column}{0.55\textwidth - 1cm}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                 BLOCK: ABSTRACT                   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{block}{Talk Abstract}
+    	Vocal communication is central to our everyday lives, facilitating social exchange. Despite significant recent discoveries, the neural mechanisms underlying coordinated vocal exchanges remain poorly understood. We examine the brain processes involved in interactive vocal behaviors, focusing on forebrain circuitry in the songbird and the rodent, and we relate these to emerging human studies that employ a range of methods to manipulate and monitor cortical areas relevant for speech.
+    \end{block}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                BLOCK: BACKGROUND                  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{block}{Brief Background}
+    	A 
+    	\cite{} 
+        \begin{center}
+		   	\includegraphics[width=0.8\textwidth]{images/mott-2}    		
+    	\end{center}
+		B
+		\cite{} 
+    \end{block}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                 BLOCK: REFERENCES                 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{block}{References}
+        \bibliographystyle{aipnum4-1}
+%        \bibliographystyle{iopart-num}
+		\bibliography{../references}
+    \end{block}
+
+\end{column}
+\end{columns}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                    FOOTER TEXT                    %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{textblock}{0.5}(0.18, 0.94)
+    \color{white}
+    \sffamily
+    \textbf{Eberly College of Science}
+    \\
+    Department of Physics
+\end{textblock}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                   END TEMPLATE                    %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{frame}
+\end{document}
