@@ -277,3 +277,6 @@ TSWLatexianTemp*
 
 # LaTeX intermediate files
 *.DS_store
+
+# PDF files
+*.pdf
